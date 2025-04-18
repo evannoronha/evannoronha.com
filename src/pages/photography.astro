@@ -1,0 +1,23 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<script
+			src="https://embedding.pic-time.com/pictures/scripts/compiled/artgalleryembed.js"
+		></script><iframe
+			frameborder="0"
+			id="pictimeIntegration"
+			src="https://evannoronha.pic-time.com/client?headless=true"
+			style="width:100%;height:100%"></iframe>
+	</body>
+</html>
