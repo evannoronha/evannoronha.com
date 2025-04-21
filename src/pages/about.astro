@@ -1,7 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BuyMeACoffee from "../components/BuyMeACoffee.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
@@ -13,9 +13,29 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 	<body>
 		<Header />
 		<main>
+			<h3>About Evan</h3>
+			<hr />
 			<img width={1020} height={510} src="/about.jpg" alt="" />
-			<h1>Hi, I'm Evan.</h1>
+			<hr />
+			<div>
+				<p>
+					Hi there! My name's Evan, and this is a space to share my
+					many passions. For now, you can find a growing body of
+					photography work, particularly focused on climbing, skiing,
+					and the outdoors.
+				</p>
+				<p>
+					If you like my work, please consider supporting me so I can continue to develop my skills and attend events, camera in hand.
+				</p>
+			</div>
 		</main>
-		<Footer />
+		<style>
+			img {
+				width: 250px;
+				height: 250px;
+				object-fit: cover;
+				border-radius: 100%;
+			}
+		</style>
 	</body>
 </html>
